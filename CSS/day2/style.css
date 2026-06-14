@@ -1,0 +1,47 @@
+/* Universal Selector */
+* {
+  color: green;
+}
+
+/* type selector */
+h1,
+p {
+  color: tomato;
+}
+
+/* class selector */
+.label {
+  color: orange;
+  font-size: 18px;
+}
+
+.para4 {
+  background-color: black;
+  padding: 30px;
+}
+
+/* id selector */
+#para2 {
+  color: white;
+}
+
+/* child selector */
+
+ul > li > a {
+  color: chartreuse;
+}
+
+/* Descendent Selector */
+ol li a {
+  color: black;
+}
+
+/* Adjecent sibling selector */
+div + form {
+  background-color: green;
+}
+
+/* General sibling selector */
+div ~ ol {
+  background-color: green;
+}
