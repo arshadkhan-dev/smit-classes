@@ -1,0 +1,58 @@
+/* LAST RULE (last element has greater proirity than the above  */
+h1 {
+  color: red;
+}
+
+h1 {
+  color: blue;
+}
+
+h1 {
+  color: green;
+}
+
+/* specificity rule (id has greater proirity) */
+
+h2 {
+  color: red;
+}
+
+#rule {
+  color: yellow;
+}
+
+.rule {
+  color: green;
+}
+
+h2 {
+  color: tomato;
+}
+
+/* important */
+
+.impo {
+  color: tomato;
+}
+
+h3 {
+  color: blueviolet !important;
+}
+
+/* inheritance */
+.parent {
+  color: red;
+  font-size: 20px;
+  border: 2px solid greenyellow;
+  height: 200px;
+  width: 200px;
+  background-color: blue;
+  color: white;
+}
+
+p {
+  color: green;
+  border: inherit;
+  background-color: inherit;
+  color: inherit;
+}

@@ -1,0 +1,20 @@
+/* foreground-colors*/
+p {
+  /* HEX COLORS (6 values) */
+
+  /* color: #ee3e80; */
+
+  /* RGB COLORS */
+  /* color value range is 0-255 */
+  /* color: rgb(12, 13, 255); */
+}
+
+/* background color */
+.section-1 {
+  background-color: rgba(34, 78, 255, 1);
+  opacity: 0.8;
+  /* used for trancparency */
+}
+
+/* color hunt (a website for picking colors for website) */
+/* color zilla (an extension used to pick colors from any website */
