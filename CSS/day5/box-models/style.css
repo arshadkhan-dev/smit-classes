@@ -1,0 +1,57 @@
+.container {
+  /* border-width: 5px;
+  border-style: dotted;
+  border-color: green; */
+  /* border: 5px dotted blue; */
+
+  border-top: 5px solid red;
+  border-right: 5px solid green;
+  border-bottom: 5px solid blue;
+  border-left: 5px solid yellow;
+
+  /* border: none; */
+}
+
+.box {
+  border-width: 5px;
+  border-style: solid;
+  border-color: brown;
+
+  /* padding-top: 20px;
+  padding-right: 30px;
+  padding-bottom: 40px;
+  padding-left: 10px; */
+
+  /* padding: 20px 30px 40px 10px; */
+  /* padding: 10px; */
+  padding: 20px 40px;
+  /* border-radius: 30px; */
+  /* border-radius: 10px 30px 10px 30px; */
+  border-radius: 10px 30px;
+
+  /* Margin */
+  /* margin-top: 10px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 40px; */
+
+  /* margin: 20px; */
+  /* margin: 10px 20px 30px 40px; */
+  margin: 30px 10px;
+  /* margin: 0; */
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 5px solid;
+  /* border-radius: 50px; */
+  border-radius: 50%;
+}
+
+.responsive {
+  border: 5px solid;
+  height: 100px;
+  max-width: 500px;
+  min-width: 200px;
+}
