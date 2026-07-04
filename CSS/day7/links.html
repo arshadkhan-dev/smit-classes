@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Links in CSS</title>
+    <style>
+      .youtube:link {
+        color: tomato;
+        text-decoration: none;
+      }
+
+      .youtube:visited {
+        color: cornflowerblue;
+        text-transform: capitalize;
+      }
+
+      .youtube:active {
+        color: crimson;
+        font-size: 30px;
+        text-decoration: underline;
+        border: 4px solid crimson;
+        box-shadow: 2px 2px 5px yellow;
+      }
+
+      .youtube:hover {
+        color: springgreen;
+        border: 3px solid springgreen;
+        box-shadow: 5px 5px 5px red;
+        padding: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Links -->
+    <!-- link, visited, active -->
+    <!-- default color blue -->
+    <!-- link default color blue -->
+    <!-- visisted default color purple -->
+    <!-- active default color red -->
+
+    <a class="google" href="https://google.com" target="_blank">Google</a>
+    <a class="facebook" href="https://facebook.com" target="_blank">Facebook</a>
+
+    <a class="youtube" href="https://youtube.com" target="_blank">Youtube</a>
+  </body>
+</html>
