@@ -4,7 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Units in CSS</title>
-    <style></style>
+    <style>
+      /* html {
+        font-size: 20px;
+      } */
+      .container {
+        border: 2px solid black;
+        height: 50vh;
+        width: 50vw;
+        /* font-size: 1rem; */
+        font-size: 10px;
+      }
+
+      p {
+        /* font-size: 1em; */
+        font-size: 2em;
+      }
+    </style>
   </head>
   <body>
     <!-- Units in CSS -->
@@ -19,5 +35,13 @@
     <!-- em(element) works with parent element -->
 
     <!-- 1rem = 16px (default) -->
+
+    <div class="container">
+      Lorem ipsum dolor sit amet.
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium,
+        quod.
+      </p>
+    </div>
   </body>
 </html>
