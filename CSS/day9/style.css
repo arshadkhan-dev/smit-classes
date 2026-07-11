@@ -1,0 +1,38 @@
+table {
+  /* border: 1px solid; */
+  width: 50%;
+  height: 40vh;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  /* border: 1px solid blue; */
+  /* height: 100px;
+  width: 200px; */
+  text-align: center;
+}
+
+th {
+  /* border: 2px solid green; */
+  background-color: green;
+  color: white;
+}
+
+tr {
+  border-bottom: 2px solid;
+}
+
+tr:hover {
+  background-color: black;
+  color: white;
+}
+
+/* tr:nth-child(even) {
+  background-color: green;
+  color: white;
+} */
+/* tr:nth-child(odd) {
+  background-color: green;
+  color: white;
+} */
