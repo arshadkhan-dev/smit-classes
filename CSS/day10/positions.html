@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position in CSS</title>
+    <style>
+      /* static | relative | absolute | fixed | sticky */
+      .container {
+        height: 200px;
+        width: 300px;
+        background-color: green;
+        /* position: static; no(top,right,bottom,left) applies on element having postion static*/
+
+        position: relative;
+        /* top: 50px; */
+        /* bottom: 70px; */
+        left: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet eum
+      voluptatem minus nihil sequi fugiat, rem hic? Quas magni veritatis
+      placeat, minus sapiente, reiciendis autem, at velit doloribus eveniet ea.
+    </p>
+    <div class="container"></div>
+    <p>
+      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit ut neque
+      et! Dignissimos tempore, odit laboriosam iure ipsa beatae corrupti ipsam
+      cum itaque eaque magni dolorem, harum provident laborum voluptatem.
+    </p>
+  </body>
+</html>
