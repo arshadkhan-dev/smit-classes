@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+
+    <style>
+      .container {
+        /* display :flex uses in parent */
+
+        width: 40vw;
+        height: 80vh;
+        border: 1px solid;
+        display: flex;
+        /* flex-wrap: nowrap; */
+        flex-wrap: wrap;
+        align-content: start;
+
+        /* flex-direction: row; */
+        /* gap: 10px; */
+        /* flexdirection row works with X-Axis */
+
+        /* justify-content: start; (works with x-axis) */
+        /* justify-content: end; */
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+        /* justify-content: space-between; */
+        /* justify-content: space-evenly; */
+
+        /* align-items: start; (works vertically) */
+        /* align-items: center; */
+        /* align-items: end; */
+
+        /* flex-direction: column; */
+        /* justify-content: center; */
+        /* justify-content: end; */
+        /* justify-content: center; */
+        /* justify-content: space-around; */
+        /* justify-content: space-evenly; */
+        /* justify-content: space-between; */
+
+        /* align-items: start; */
+        /* align-items: center; */
+        /* align-items: end; */
+
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+      }
+
+      .child {
+        height: 100px;
+        width: 100px;
+        border: 1px solid;
+      }
+
+      .child3 {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="child child1">1</div>
+      <div class="child child2">2</div>
+      <div class="child child3">3</div>
+      <div class="child child4">4</div>
+    </div>
+  </body>
+</html>
