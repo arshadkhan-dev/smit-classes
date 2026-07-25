@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card</title>
+    <style>
+      .card-container {
+        border: 2px solid;
+        width: 300px;
+        border-radius: 5px;
+        display: flex;
+        margin: auto;
+        background-color: #213425;
+        color: white;
+        font-size: 18;
+        box-shadow: 5px 5px 5px black;
+      }
+
+      .image {
+        padding: 10px;
+      }
+      .image img {
+        border-radius: 10px;
+      }
+
+      .detail {
+        position: relative;
+      }
+      .about {
+        padding: 10px;
+      }
+
+      .about > h2 {
+        position: absolute;
+        left: 150px;
+        bottom: 290px;
+      }
+      .about > h3 {
+        position: absolute;
+        left: 150px;
+        bottom: 260px;
+      }
+
+      .contact {
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card-container">
+      <div class="card">
+        <div class="image">
+          <img src="img2.png" alt="My-picture" width="120px" height="100px" />
+        </div>
+        <div class="detail">
+          <div class="about">
+            <h2>Arshad Khan</h2>
+            <h3><i>Web Developer</i></h3>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum
+              suscipit excepturi alias blanditiis ex. Aliquid numquam quae
+              cumque voluptas labore voluptate laudantium praesentium, suscipit
+              nemo quod mollitia, corrupti aspernatur iure!
+            </p>
+          </div>
+
+          <div class="contact">
+            <address>
+              <a href="mail-to:arshadkhan.dev.pk@gmail.com"
+                >arshadkhan.de.pk@gmail.com</a
+              >
+              <p>03xxxxxxxxxx</p>
+            </address>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
