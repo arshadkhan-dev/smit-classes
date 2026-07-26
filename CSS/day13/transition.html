@@ -4,7 +4,29 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transition</title>
-    <style></style>
+    <style>
+      .container {
+        height: 200px;
+        width: 200px;
+        border: 1px solid;
+        /* transition: transform, width, background-color, color; */
+        /* transition: all; */
+        transition: background-color, transform;
+        transition-duration: 3s;
+        /* transition-delay: 1s; */
+        /* transition-timing-function: ease-in; */
+        /* transform-style: flat; */
+      }
+
+      .container:hover {
+        /* transform: rotate(160deg);
+        width: 300px;
+        background-color: blue;
+        color: white; */
+        background-color: blue;
+        transform: scale(120%);
+      }
+    </style>
   </head>
   <body>
     <div class="container">hello</div>
