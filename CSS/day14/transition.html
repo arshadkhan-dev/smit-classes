@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transitions</title>
+    <style>
+      .container {
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+        margin: 50px auto;
+        color: blue;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition-property: all;
+        transition-duration: 2s;
+        transition-delay: 1s;
+        transition-timing-function: ease;
+
+        /* Shortcut */
+        transition: all 1s 1s ease;
+      }
+
+      .container:hover {
+        transform: scale(1.5);
+        background-color: blue;
+        color: white;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">Hello Friends</div>
+  </body>
+</html>
