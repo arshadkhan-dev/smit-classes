@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Animation Practice</title>
+
+    <style>
+      h1 {
+        color: orange;
+        display: inline-block;
+        overflow: hidden;
+        white-space: nowrap;
+        border-right: 3px solid white;
+        width: 0;
+        /* animation:
+          typing 3s steps(28, end) forwards infinite,
+          blink-caret 0.75s step-end infinite; */
+
+        /* animation-name: changeColor;
+        animation-duration: 2s;
+        animation-delay: 1s;
+        animation-timing-function: ease-in-out;
+        animation-direction: normal;
+        animation-iteration-count: infinite; */
+
+        animation-name: typing;
+        animation-duration: 3s;
+        animation-timing-function: steps(28, start);
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 28ch;
+        }
+      }
+
+      @keyframes blink-caret {
+        from,
+        to {
+          border-color: transparent;
+        }
+        50% {
+          border-color: white;
+        }
+      }
+
+      @keyframes changeColor {
+        /* 0% {
+          color: Yellow;
+          background-color: black;
+        }
+
+        50% {
+          color: white;
+          background-color: blue;
+        }
+
+        100% {
+          color: black;
+          background-color: green;
+        } */
+        /* from {
+          color: white;
+        }
+
+        to {
+          background-color: blue;
+          color: white;
+        } */
+
+        /* from {
+          transform: translateX(-500px);
+        }
+        to {
+          background-color: blue;
+          color: white;
+          transform: translateX(0px);
+        } */
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h2>Hi, I am Arshad Khan</h2>
+      <p>
+        <b>Intor:</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+        Consequatur et sit, unde consectetur numquam quae repudiandae dolor
+        aspernatur fugiat. Provident dolorum eius placeat rem consectetur
+        exercitationem sunt illum quisquam quam.
+      </p>
+
+      <h1>MERN Stack Web Development</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. In facilis
+        reprehenderit quibusdam nihil nobis architecto aspernatur neque odit
+        consectetur? Laboriosam omnis reprehenderit ad tenetur necessitatibus ea
+        nihil, quas quaerat atque?
+      </p>
+    </div>
+  </body>
+</html>
