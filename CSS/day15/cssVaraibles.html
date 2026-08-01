@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Variables</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      :root {
+        --link-color: black;
+        --primary-color: blue;
+        --secondary-color: rgb(17, 85, 107);
+      }
+
+      .navbar {
+        display: flex;
+        gap: 10px;
+        justify-content: space-around;
+        list-style: none;
+        background-color: cornflowerblue;
+        padding: 20px;
+      }
+
+      a {
+        color: var(--link-colors);
+      }
+      h1 {
+        color: var(--primary-color);
+      }
+      p {
+        color: var(--secondary-color);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <ul class="navbar">
+        <li><a href="">Link 1</a></li>
+        <li><a href="">Link 2</a></li>
+        <li><a href="">link 3</a></li>
+        <li><a href="">link 4</a></li>
+        <li><a href="">link 5</a></li>
+        <li><a href="">link 6</a></li>
+      </ul>
+    </header>
+    <main>
+      <section class="section1">
+        <h1>This is Section 1</h1>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Blanditiis
+          laborum, facilis qui quia facere fugiat quasi eum ullam et vero rem
+          reprehenderit aut, eaque, impedit illum veritatis! Quis, architecto
+          repellendus!
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
