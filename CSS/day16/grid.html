@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid in CSS</title>
+    <style>
+      .container {
+        border: 1px solid;
+        width: 80vw;
+        height: 80vh;
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+        display: grid;
+        /* gap: 10px; */
+        /* row-gap: 10px; */
+        /* column-gap: 20px; */
+        /* gap: 10px 100px; (first value is for row and second value is for column) */
+      }
+
+      .grid-item {
+        width: 100px;
+        height: 100px;
+        border: 1px solid;
+      }
+
+      .item1 {
+        align-self: center;
+        justify-self: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="grid-item item1"></div>
+      <div class="grid-item item2"></div>
+      <div class="grid-item item3"></div>
+      <div class="grid-item item4"></div>
+      <div class="grid-item item5"></div>
+      <div class="grid-item item6"></div>
+      <div class="grid-item item7"></div>
+    </div>
+  </body>
+</html>
