@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Query in grid</title>
+
+    <style>
+      .box {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10;
+      }
+
+      .grid_child {
+        /* width: 300px; */
+        height: 300px;
+        border: 1px solid;
+      }
+
+      @media (min-width: 426px) {
+        .box {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      @media (min-width: 769px) {
+        .box {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+      @media (min-width: 1025px) {
+        .box {
+          grid-template-columns: repeat(5, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="grid_child"></div>
+      <div class="grid_child"></div>
+      <div class="grid_child"></div>
+      <div class="grid_child"></div>
+      <div class="grid_child"></div>
+      <div class="grid_child"></div>
+      <div class="grid_child"></div>
+      <div class="grid_child"></div>
+      <div class="grid_child"></div>
+      <div class="grid_child"></div>
+      <div class="grid_child"></div>
+    </div>
+  </body>
+</html>
