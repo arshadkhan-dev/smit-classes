@@ -1,5 +1,10 @@
 // In JavaScript, an object is a standalone data structure that stores collections of data as key-value pairs. Unlike primitive data types (like strings or numbers) which hold a single value, objects can group together related data and behaviors.
 
+// You can access object properties in two ways:
+
+// Dot notation
+// Bracket notation
+
 // student details
 // name "test"
 // age 22
@@ -70,3 +75,15 @@ console.log(Product.categories[2]);
 
 delete Product.Warrenty;
 console.log(Product);
+
+const person = new Object({
+  name: "Kamran",
+  age: 20,
+  addrss: "Peshawar",
+  job: function () {
+    console.log("He is a student");
+    return this.name;
+  },
+});
+
+console.log(person.job());
