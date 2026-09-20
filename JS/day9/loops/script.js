@@ -55,5 +55,11 @@ let students = {
 };
 
 for (let key in students) {
-  console.log(key + ": " + students[key]);
+  console.log(key);
+}
+
+let fruits = ["apple", "banana", "orange"];
+
+for (let x in fruits) {
+  console.log(x);
 }
