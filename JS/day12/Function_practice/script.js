@@ -191,3 +191,47 @@ function calculateShipping(orderAmount) {
 // let shippingCost = calculateShipping(7000);
 let shippingCost = calculateShipping(3000);
 console.log(shippingCost);
+
+// Challange Mini Project
+
+// Q No.14 Student Result System
+
+function calculateAverage(mark1, mark2, mark3) {
+  return (mark1 + mark2 + mark3) / 3;
+}
+
+function check_Result(average) {
+  if (average >= 50 && average <= 100) {
+    return "Pass";
+  } else if (average > 0 && average < 50) {
+    return "Fial";
+  } else {
+    return "Wrong number entered";
+  }
+}
+
+function generateResult(name, average) {
+  console.log(`Student: ${name} \n Average: ${average} \n Result: ${result} `);
+}
+
+let average = calculateAverage(90, 80, 80);
+let result = check_Result(average);
+generateResult("Arshad Khan", average);
+
+// Bonus Challange
+// Q No. 15
+
+function calculate_Total(price, quantity) {
+  return price * quantity;
+}
+
+function Discount(amount) {
+  return amount * (10 / 100);
+}
+
+let subTotal = calculate_Total(3000, 5);
+let finalDiscount = Discount(subTotal);
+let finalAmount = subTotal - finalDiscount;
+console.log("SubTotal " + subTotal);
+console.log("Discount " + finalDiscount);
+console.log("Final Amount " + finalAmount);
