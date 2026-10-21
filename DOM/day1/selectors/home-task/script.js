@@ -1,7 +1,15 @@
-const btn = document.querySelector(".icon");
 const links = document.querySelector(".nav-links");
+const bar = document.querySelector(".fa-bars");
+const cross = document.querySelector(".fa-xmark");
 
-btn.onclick = () => {
+bar.onclick = function () {
   links.classList.toggle("active");
-  btn.textContent = links.classList.contains("active") ? "X" : "icon";
+  bar.style.display = "none";
+  cross.style.display = "block";
+};
+
+cross.onclick = function () {
+  links.classList.remove("active");
+  bar.style.display = "block";
+  cross.style.display = "none";
 };
