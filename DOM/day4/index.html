@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      .listStyle {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: 4px;
+        box-sizing: border-box;
+        list-style: none;
+        width: 50%;
+        background-color: darkblue;
+        color: white;
+        height: 3rem;
+        padding: 1rem;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <p>Lorem ipsum dolor sit amet.</p>
+    <div id="container"></div> -->
+
+    <!-- <ul id="lists"></ul> -->
+
+    <h1>Todo list</h1>
+
+    <label for="task">Task:</label>
+    <input
+      type="text"
+      name="task"
+      id="inputValue"
+      placeholder="enter your task"
+    />
+    <button id="btn">Add</button>
+    <ul id="list"></ul>
+    <script src="script.js"></script>
+  </body>
+</html>
