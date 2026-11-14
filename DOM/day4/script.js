@@ -1,26 +1,26 @@
 // create element
 
-// let container = document.getElementById("container");
-// let heading = document.createElement("h1");
-// heading.textContent = "Hello DOM";
-// heading.classList.add("heading1");
+let container = document.getElementById("container");
+let heading = document.createElement("h1");
+heading.textContent = "Hello DOM";
+heading.classList.add("heading1");
 
 // appendChild
 
-// container.appendChild(heading);
+container.appendChild(heading);
 
 // append
 
-// container.append(heading, "This is heading 1");
+container.append(heading, "This is heading 1");
 
-// let students = ["arshad", "bilal", "umar"];
-// let lists = document.getElementById("lists");
+let students = ["arshad", "bilal", "umar"];
+let lists = document.getElementById("lists");
 
-// for (let stu of students) {
-//   let student = document.createElement("li");
-//   student.textContent = stu;
-//   lists.appendChild(student);
-// }
+for (let stu of students) {
+  let student = document.createElement("li");
+  student.textContent = stu;
+  lists.appendChild(student);
+}
 
 // todo app
 
