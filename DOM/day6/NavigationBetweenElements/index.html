@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Between Elements</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        max-width: 800px;
+        margin: 30px auto;
+        padding: 16px;
+      }
+
+      .products {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+      }
+
+      .product-card {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 16px;
+        width: 200px;
+      }
+
+      button {
+        padding: 8px 12px;
+        cursor: pointer;
+      }
+
+      #result {
+        margin-top: 24px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div id="card" class="card1">
+      <h2 id="title">Hello DOM</h2>
+      <p id="para">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, nemo.
+        Nobis deleniti quam earum commodi.
+      </p>
+      <button>Click</button>
+    </div> -->
+
+    <h1>Our Products</h1>
+    <div class="products">
+      <div class="product-card">
+        <h2>Keyboard</h2>
+        <p class="price">Rs: 1500</p>
+        <button class="buyBtn">Select Product</button>
+      </div>
+
+      <div class="product-card">
+        <h2>Mouse</h2>
+        <p class="price">Rs: 100</p>
+        <button class="buyBtn">Select Product</button>
+      </div>
+
+      <div class="product-card">
+        <h2>LCD</h2>
+        <p class="price">Rs: 1200</p>
+        <button class="buyBtn">Select Product</button>
+      </div>
+
+      <div class="product-card">
+        <h2>Mobile</h2>
+        <p class="price">Rs: 2000</p>
+        <button class="buyBtn">Select Product</button>
+      </div>
+    </div>
+
+    <p id="result">Select a product to see its details.</p>
+
+    <script src="script.js"></script>
+  </body>
+</html>
