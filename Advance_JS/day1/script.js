@@ -1,28 +1,30 @@
 // // Destructuring: Allows us to extract value from arrays or properties from objects and assign them to variables.
 
 // // Array Destructring
-// let colors = ["red", "green", "blue"];
+let colors = ["red", "green", "blue"];
 
 // let [first, second, third] = colors;
-// // console.log(first);
-// // console.log(second);
-// // console.log(third);
+// console.log(first);
+// console.log(second);
+// console.log(third);
+// console.log(forth);
 
 // // object destructring
 
-// const userDetails = {
-//   name: "arshad",
-//   age: 20,
-//   id: 123,
-//   gender: "male",
-// };
+const userDetails = {
+  name: "arshad",
+  age: 20,
+  id: 123,
+  gender: "male",
+};
 
-// const { name, age } = userDetails;
+const { name, age } = userDetails;
 
-// // console.log(name);
-// // console.log(age);
+// console.log(name);
+// console.log(age);
 
 // // Allias
+
 // const { name: firstName, age: userAge } = {
 //   name: "ali",
 //   age: 20,
@@ -30,34 +32,38 @@
 //   gender: "male",
 // };
 
-// // console.log(firstName);
-// // console.log(userAge);
+const { name: firstName, age: userAge } = userDetails;
+
+// console.log(firstName);
+// console.log(userAge);
 
 // // nested Destructuring
 
-// // const student = {
-// //   studentName: "sara",
-// //   address: { city: "peshawar", country: "Pakistan" },
-// // };
+const student = {
+  studentName: "sara",
+  address: { city: "peshawar", country: "Pakistan" },
+};
 
-// // const {
-// //   studentName,
-// //   address: { city, country },
-// // } = student;
+const {
+  studentName,
+  address: { city, country },
+} = student;
 
-// // console.log(studentName);
-// // console.log(city);
+// console.log(studentName);
+// console.log(city);
+// console.log(country);
 
 // // spread operator
 
 // // spread operator Array
 
-// const frontend = ["HTML", "CSS", "JS"];
-// const backend = ["Node.js", "Express"];
+const frontend = ["HTML", "CSS", "JS"];
+const backend = ["Node.js", "Express"];
 
-// const fullstack = [...frontend, ...backend];
+const fullstack = [...frontend, ...backend];
 
-// // console.log(fullstack);
+// console.log(frontend);
+// console.log(fullstack);
 // const original = [1, 3, 4, 5, 6];
 // // console.log(original);
 
@@ -76,47 +82,48 @@
 // // console.log(copy);
 
 // // Copy and update object
-// const user = {
-//   name: "ahmad",
-//   role: "student",
-// };
+const user = {
+  name: "ahmad",
+  role: "student",
+};
 
-// const updatedUser = {
-//   ...user,
-//   role: "developer",
-// };
+const updatedUser = {
+  ...user,
+  role: "developer",
+};
 
-// // console.log(updatedUser);
+// console.log(user);
+// console.log(updatedUser);
 
 // // Rest Parameters(...): collect multiple function arguements into a single array
 
-// function calculateTotal(...prices) {
-//   console.log(prices);
-//   let totalPrice = 0;
-//   for (let price of prices) {
-//     totalPrice = totalPrice + price;
-//   }
-//   console.log(totalPrice);
-// }
+function calculateTotal(...prices) {
+  console.log(prices);
+  let totalPrice = 0;
+  for (let price of prices) {
+    totalPrice = totalPrice + price;
+  }
+  console.log(totalPrice);
+}
 
-// calculateTotal(10, 50, 470, 310, 80);
+calculateTotal(10, 50, 470, 310, 80);
 
 // // Homework
 
-const student = {
-  name: "Ali",
-  age: 21,
-  city: "Peshawar",
-  skills: ["HTML", "CSS", "JavaScript"],
-};
+// const student = {
+//   name: "Ali",
+//   age: 21,
+//   city: "Peshawar",
+//   skills: ["HTML", "CSS", "JavaScript"],
+// };
 
-let { name, age, city } = student;
-console.log(name);
-console.log(age);
-console.log(city);
+// let { name, age, city } = student;
+// console.log(name);
+// console.log(age);
+// console.log(city);
 
-let [firstSkill] = student.skills;
-console.log(firstSkill);
+// let [firstSkill] = student.skills;
+// console.log(firstSkill);
 
-let newSkills = [...student.skills, "react"];
-console.log(newSkills);
+// let newSkills = [...student.skills, "react"];
+// console.log(newSkills);
